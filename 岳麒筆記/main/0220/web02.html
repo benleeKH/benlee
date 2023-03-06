@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position的用法</title>
+    <style>
+        .div1 {
+            width: 80px;
+            height:80px;
+            background: greenyellow;
+        }
+
+        .div2{
+            width:200px;
+            height:200px;
+            background: blue;
+        }
+
+        .div3{
+            padding:30px;
+            border: 5px solid red;
+        }
+
+        .div4{
+            width:40px;
+            height:40px;
+            background: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>CSS教學</div>
+    <br>
+
+    <div  class="div1"></div> 
+    <div  class="div2"></div>
+    <br>
+
+    <div class="div3">
+        <div class="div3">
+            <div class="div4" style="position:absolute; top:0px;"></div>  <!-- 這是position:absolute的用法 -->
+        </div>
+
+    </div>
+
+
+    
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>box-sizing</title>
+<link rel="icon" href="/images/favicon.ico">
+
+<style> 
+#example1 {
+  box-sizing: content-box;  
+  width: 300px;
+  height: 100px;
+  padding: 30px;
+  font-family: Microsoft JhengHei;
+  font-weight: bolder;
+  color:red; 
+  border: 10px solid #C39;
+}
+
+#example2 {
+  box-sizing: border-box;
+  width: 300px;
+  height: 100px;
+  padding: 30px;
+  font-family: Microsoft JhengHei; 
+  font-weight: bolder;
+  color:blue;  
+  border: 10px solid #C39;
+}
+</style>
+</head>
+<body>
+
+<h1>box-sizing 屬性</h1>
+<p>定義如何計算一個元素的總寬度和總高度，是否包含內邊距和邊框。</p>
+
+<h2>box-sizing: content-box (默認):</h2>
+<p>高度和寬度只應用於元素的內容:</p>
+<div id="example1">這個 div 的寬度為 300px。但完整寬度為 300px + 20px (左邊框和右邊框) + 60px (左邊距和右邊距) = 380px!</div>
+
+<h2>box-sizing: border-box:</h2>
+<p>高度和寬度應用於元素的所有部分: 內容、內邊距和邊框:</p>
+<div id="example2">不管如何這裡的完整寬度為300px!</div>
+
+</body>
+</html>

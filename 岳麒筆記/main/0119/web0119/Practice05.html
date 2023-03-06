@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8個簡單的CSS Hover效果</title>
+
+    <link rel="icon" href="/images/favicon.ico">
+
+    <style>
+        .demo1, .demo2, .demo3, .demo4, .demo5, .demo6, .demo7, .demo8{
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+            margin:80px auto 0;
+            transition: 0.5s;
+        }
+
+        /* .bg1{
+            background-image: url(/images/blooms.jpg);
+        } */
+
+
+        /* .bg2{
+            background-image: url(/images/SunFlower.jpg);
+        } */
+
+        .style-one {
+            border-top: 3px solid #0CC;
+        }
+
+        /* 淡入/淡出 */
+        .demo1{
+            opacity: 0.3;
+        }
+        .demo1:hover{
+            opacity: 1;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color:#432
+        }
+
+        /* 變換顏色 */
+        .demo2:hover{
+            background: #fa0;
+        }
+
+        /* 放大縮小 */
+        .demo3:hover{
+            transform: scale(1.2);
+        }
+
+        /* 旋轉 */
+        .demo4:hover{
+            transform: rotate(45deg);
+        }
+
+        /* 圓角 */
+        .demo5:hover{
+            border-radius: 50%;
+        }
+
+        /* 陰影 */
+        .demo6:hover{
+            box-shadow: 10px 10px 5px rgba(0, 0,0, 0.8);
+        }
+
+
+        /* 搖擺 */
+        @keyframes swing{
+            15%{transform:translateX(5px);}
+            40%{transform:translateX(-5px);}
+            65%{transform:translateX(2px);}
+            85%{transform:translateX(-2px);}
+            100%{transform:translateX(0px);}
+        }
+        .demo7:hover{
+            animation:swing 1s 1;
+        }
+
+        /* 內邊框 */
+        .demo8:hover{
+            box-shadow: inset 0 0 0 30px black;
+        }
+    </style>
+</head>
+<body class="bg2">
+        <h1 style="text-align: center;color:#0CC ;">8個簡單的 CSS Hover 效果</h1>
+
+        <hr class="style-one">
+        <h1 style="text-align: center;"><a href="#"> 淡入/淡出</a></h1>
+        <div class="demo1 bg1"></div>
+
+        <hr class="style-one">
+        <h1 style="text-align: center;color: #fa0;">變換顏色</h1>
+        <div class="demo2 bg1"></div>
+
+        <hr class="style-one">
+        <h1 style="text-align: center;color: yellowgreen;">放大縮小</h1>
+        <div class="demo3 bg1"></div>
+
+        <hr class="style-one">
+        <h1 style="text-align: center;color: green;">旋轉</h1>
+        <div class="demo4 bg1"></div>
+
+        <hr class="style-one">
+        <h1 style="text-align: center;color: blue;margin: 50px;">圓角</h1>
+        <div class="demo5 bg1"></div>
+
+        <hr class="style-one">
+        <h1 style="text-align: center;color: indigo;">陰影</h1>
+        <div class="demo6 bg1"></div>
+
+        <hr class="style-one">
+        <h1 style="text-align: center;color: purple">搖擺</h1>
+        <div class="demo7 bg1"></div>
+
+        <hr class="style-one">
+        <h1 style="text-align: center;color: black">內邊框</h1>
+        <div class="demo8 bg1"></div>
+
+</body>
+</html>

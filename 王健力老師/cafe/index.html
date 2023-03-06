@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang>
+    <head>
+        <meta charset="utf-8">
+        <title>WCB Cafe</title>
+        <meta name="description" content="提供綜合咖啡與健康有機食物的咖啡店">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="css/cafe.css" rel="stylesheet">
+
+        <style>
+        #bg-video1 {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        right: auto;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translateX(-50%) translateY(-70%);
+        z-index: -100;
+        background-image: url(/images/blooms.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+        .divPosition{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-65%, 30%);
+        
+    }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="home">
+            <header class="page-header wrapper divPosition big-bg">
+                <h1><a href="index.html"><img class="logo" src="images/logo.svg" alt="WCB CAFE 首頁"></a></h1>
+                <video autoplay muted loop id="bg-video1">
+                    <source src="/media/Blooms.mp4">
+                </video>
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="home-content wrapper divPosition">
+                <h2 class="page-title">We'll</b> Make Your Day</h2>
+                <p>想不想待在時尚咖啡店裡放鬆身心？用無人工添加物的食材讓身體由內而外煥然一新。</p>
+                <a class="button" href="menu.html">菜單介紹</a>
+            </div><!-- /.home-content -->
+        </div><!-- /#home -->
+    </body>
+</html>

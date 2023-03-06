@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery範例</title>
+
+    <link rel="icon" href="/images/favicon.ico">
+    
+    <style>
+		body {font-family:Verdana, Geneva, sans-serif; font-size:11pt;}
+		div {margin-left:5px; border:solid #000 1px;}
+		#box {text-align: center; background-color:#FF9;height:500px;width:500px;}
+	</style>
+
+</head>
+<body>
+    <p>
+        <input type="button" name="btnShow" id="btnShow" value="顯示">
+        <input type="button" name="btnHide" id="btnHide" value="隱藏">
+        <input type="button" name="btnToggle" id="btnToggle" value="切換">
+      </p>
+      <p>&nbsp; </p>
+      <div id="box">Box</div>
+     
+      
+    <script src="http://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <script>
+        $(document).ready(function(){	
+            $('#btnShow').click(function(){
+                $('#box').show(500);
+            });
+            $('#btnHide').click(function(){
+                $('#box').hide(500);
+            });
+            $('#btnToggle').click(function(){
+                $('#box').toggle(500);
+            });	
+        });
+    </script>
+</body>
+</html>

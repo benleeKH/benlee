@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>虛擬元素選擇器的用法</title>
+    <style>
+        .hero{
+            font-size: 100px;
+            color: red;
+        }
+
+        .hero::before{
+            content: "123";
+            color: blue;
+        }
+
+        .hero::after{
+            content: "789";
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">456</div>
+</body>
+</html>

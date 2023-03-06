@@ -1,0 +1,37 @@
+h1 {
+    color: rgba(220, 20, 60,0.7);
+    font-size: 150px;
+    text-align: center;
+}
+
+#test {
+    color: rgba(220, 20, 60,0.7);
+    font-size: 150px;
+    text-align: center;
+    background-color: hotpink;
+}
+
+body {
+    background-image:url("../images/1511186_318659301608522_308881932_n.png");
+}
+
+#green {
+    color: orange;
+    font-size: 150px;
+    text-align: center;
+    background-color: aqua;
+}
+
+.類別{
+    color: rgba(220, 20, 60,0.7);
+    font-size: 150px;
+    text-align: center;
+    background-color: hotpink;
+}
+
+#white {
+    color: rgb(55, 0, 255);
+    font-size: 150px;
+    text-align: center;
+    background-color: rgba(0, 255, 255,0.5);
+}
